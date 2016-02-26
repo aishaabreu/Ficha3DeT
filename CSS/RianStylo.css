@@ -1,0 +1,46 @@
+/* Tags */
+cm{font-size: 1.25em}
+mais{font-size: 1.15em}
+input{font-size: 0.7em; width: 200px}
+textarea{font-size: 0.7em}
+a{color: #ffffff; text-decoration: none}
+a:hover{color: #66ff66}
+*{font-family: sans-serif; font-weight:bolder; font-size: 18px}
+/* Id's */
+#a{background-color:#fefefe}
+#b{background-color:#000000}
+#a:hover{border: 1px solid blue; background-color: #d0d0d0}
+#b:hover{border: 1px solid red; background-color: #404040}
+#FICHA{background-color: #101010; border: 2px solid #202020; border-radius: 5px; color: #f0f0f0}
+#FUNDO{background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(69,69,69,1.00)),color-stop( 53.37% , rgba(71,71,71,1.00)),color-stop( 100% , rgba(69,69,69,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(69,69,69,1.00) 0%,rgba(71,71,71,1.00) 53.37%,rgba(69,69,69,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(69,69,69,1.00) 0%,rgba(71,71,71,1.00) 53.37%,rgba(69,69,69,1.00) 100%)}
+#CARACTERISTICAS{height: 182px}
+#FOLHA{margin: auto ; margin-top: 30px ;width: 640px; height: 890px; background-color: #fefefe; padding: 15px; border: 2px solid #707070; border-radius: 7px}
+#pont{font-size: 0.8em}
+#FERRAMENTAS{position: fixed;margin-left: 40px; margin-top: -10px; background-color: #40aa40; border: 2px solid #409940; border-radius: 4px; padding: 5px}
+/* Classes */
+.Titulo{background-color:#000; border:2px solid #333; border-radius: 7px; width: 470px; color:#FFF}
+.circulo{
+	border: 1px solid #505050;
+	width: .75em;
+	height: .75em;
+	border-radius: 100%;
+	box-shadow: 2px 2px #505050;
+}
+.circuloM{
+	border: 1px solid #505050;
+	width: .6em;
+	height: .6em;
+	border-radius: 100%;
+	box-shadow: 1px 1px #505050;
+}
+.vazio{
+	background-color: #f0f0f0;
+	height: 24px;
+	width: 256px;
+	border: 4px solid #ffffff
+}
+.vazio:hover{ background-color: #e0e0e0}
+.bmenos{text-decoration: none; background-color: #e0e0e0; width: 7px; height: 3px}
+.bmenos:hover{background-color: red}
