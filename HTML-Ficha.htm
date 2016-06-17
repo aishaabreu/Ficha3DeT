@@ -1,339 +1,795 @@
 <html>
 <head>
-<title>Ficha 3D&T</title>
-<meta charset="utf-8"> 
-<link type='text/css' rel='stylesheet' href='CSS/RianStylo.css'>
-<script type='text/javascript' src='Script/RianScript.js'></script>
+    <title>Ficha 3D&T</title>
+    <meta charset="utf-8">
+    <link type='text/css' rel='stylesheet' href='CSS/RianStylo.css'>
+    <script type='text/javascript' src='Script/RianScript.js'></script>
 </head>
 <body id='FUNDO'>
 <!--div id='FERRAMENTAS'><a  onClick='abrir()'>Abrir</a>  <a  onClick='salvar()' href='#'>Baixar</a></div-->
 <div id='FOLHA'>
-<div align='center'><img src='IMG/Logo.svg' width='600px'></div>
-<div id='FICHA' align='center'><cm>FICHA DE PERSONAGEM</cm></div>
-<div style='height:7px'></div>
-<!-- Lado Esquerdo --><div style='width: 315px; float: left; padding-left: 5px'>
-<div id='NOME'>Nome  <input type='text' id='0'></div>
-<div id='CARACTERISTICAS'>
-<div style='margin-left: 7px'><mais><cm>C</cm>ARATERÍSTICAS</mais></div>
-<table>
-<td width='135px'>Força</td>
-<th id='31'><div onClick="marcar(3,1,7)" id='a' class='circulo'></div></th>
-<th id='32'><div onClick="marcar(3,2,7)" id='a' class='circulo'></div></th>
-<th id='33'><div onClick="marcar(3,3,7)" id='a' class='circulo'></div></th>
-<th id='34'><div onClick="marcar(3,4,7)" id='a' class='circulo'></div></th>
-<th id='35'><div onClick="marcar(3,5,7)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='36'><div onClick="marcar(3,6,7)" id='a' class='circulo'></div></th>
-<th id='37'><div onClick="marcar(3,7,7)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='135px'>Habilidade</td>
-<th id='41'><div onClick="marcar(4,1,7)" id='a' class='circulo'></div></th>
-<th id='42'><div onClick="marcar(4,2,7)" id='a' class='circulo'></div></th>
-<th id='43'><div onClick="marcar(4,3,7)" id='a' class='circulo'></div></th>
-<th id='44'><div onClick="marcar(4,4,7)" id='a' class='circulo'></div></th>
-<th id='45'><div onClick="marcar(4,5,7)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='46'><div onClick="marcar(4,6,7)" id='a' class='circulo'></div></th>
-<th id='47'><div onClick="marcar(4,7,7)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='135px'>Resistência</td>
-<th id='51'><div onClick="marcar(5,1,7)" id='a' class='circulo'></div></th>
-<th id='52'><div onClick="marcar(5,2,7)" id='a' class='circulo'></div></th>
-<th id='53'><div onClick="marcar(5,3,7)" id='a' class='circulo'></div></th>
-<th id='54'><div onClick="marcar(5,4,7)" id='a' class='circulo'></div></th>
-<th id='55'><div onClick="marcar(5,5,7)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='56'><div onClick="marcar(5,6,7)" id='a' class='circulo'></div></th>
-<th id='57'><div onClick="marcar(5,7,7)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='135px'>Armadura</td>
-<th id='61'><div onClick="marcar(6,1,7)" id='a' class='circulo'></div></th>
-<th id='62'><div onClick="marcar(6,2,7)" id='a' class='circulo'></div></th>
-<th id='63'><div onClick="marcar(6,3,7)" id='a' class='circulo'></div></th>
-<th id='64'><div onClick="marcar(6,4,7)" id='a' class='circulo'></div></th>
-<th id='65'><div onClick="marcar(6,5,7)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='66'><div onClick="marcar(6,6,7)" id='a' class='circulo'></div></th>
-<th id='67'><div onClick="marcar(6,7,7)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='135px'>Poder de Fogo</td>
-<th id='71'><div onClick="marcar(7,1,7)" id='a' class='circulo'></div></th>
-<th id='72'><div onClick="marcar(7,2,7)" id='a' class='circulo'></div></th>
-<th id='73'><div onClick="marcar(7,3,7)" id='a' class='circulo'></div></th>
-<th id='74'><div onClick="marcar(7,4,7)" id='a' class='circulo'></div></th>
-<th id='75'><div onClick="marcar(7,5,7)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='76'><div onClick="marcar(7,6,7)" id='a' class='circulo'></div></th>
-<th id='77'><div onClick="marcar(7,7,7)" id='a' class='circulo'></div></th>
-</table>
-</div>
-<div id='PVPM'>
-<div id='PONTOSDEVIDA'>
-<table>
-<td width='132px' style='font-size: 0.85em'>Pontos de Vida</td>
-<th id='141'><div onClick="marcar(14,1,25)" id='a' class='circuloM'></div></th>
-<th id='142'><div onClick="marcar(14,2,25)" id='a' class='circuloM'></div></th>
-<th id='143'><div onClick="marcar(14,3,25)" id='a' class='circuloM'></div></th>
-<th id='144'><div onClick="marcar(14,4,25)" id='a' class='circuloM'></div></th>
-<th id='145'><div onClick="marcar(14,5,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='146'><div onClick="marcar(14,6,25)" id='a' class='circuloM'></div></th>
-<th id='147'><div onClick="marcar(14,7,25)" id='a' class='circuloM'></div></th>
-<th id='148'><div onClick="marcar(14,6,25)" id='a' class='circuloM'></div></th>
-<th id='149'><div onClick="marcar(14,9,25)" id='a' class='circuloM'></div></th>
-<th id='1410'><div onClick="marcar(14,10,25)" id='a' class='circuloM'></div></th>
-</table>
-<div width='282px' align='right'><table>
-<th id='1411'><div onClick="marcar(14,11,25)" id='a' class='circuloM'></div></th>
-<th id='1412'><div onClick="marcar(14,12,25)" id='a' class='circuloM'></div></th>
-<th id='1413'><div onClick="marcar(14,13,25)" id='a' class='circuloM'></div></th>
-<th id='1414'><div onClick="marcar(14,14,25)" id='a' class='circuloM'></div></th>
-<th id='1415'><div onClick="marcar(14,15,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='1416'><div onClick="marcar(14,16,25)" id='a' class='circuloM'></div></th>
-<th id='1417'><div onClick="marcar(14,17,25)" id='a' class='circuloM'></div></th>
-<th id='1418'><div onClick="marcar(14,18,25)" id='a' class='circuloM'></div></th>
-<th id='1419'><div onClick="marcar(14,19,25)" id='a' class='circuloM'></div></th>
-<th id='1420'><div onClick="marcar(14,20,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='1421'><div onClick="marcar(14,21,25)" id='a' class='circuloM'></div></th>
-<th id='1422'><div onClick="marcar(14,22,25)" id='a' class='circuloM'></div></th>
-<th id='1423'><div onClick="marcar(14,23,25)" id='a' class='circuloM'></div></th>
-<th id='1424'><div onClick="marcar(14,24,25)" id='a' class='circuloM'></div></th>
-<th id='1425'><div onClick="marcar(14,25,25)" id='a' class='circuloM'></div></th>
-</table></div>
-</div>
-<div id='PONTOSDEMAGIA'>
-<table>
-<td width='132px' style='font-size: 0.85em'>Pontos de Magia</td>
-<th id='151'><div onClick="marcar(15,1,25)" id='a' class='circuloM'></div></th>
-<th id='152'><div onClick="marcar(15,2,25)" id='a' class='circuloM'></div></th>
-<th id='153'><div onClick="marcar(15,3,25)" id='a' class='circuloM'></div></th>
-<th id='154'><div onClick="marcar(15,4,25)" id='a' class='circuloM'></div></th>
-<th id='155'><div onClick="marcar(15,5,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='156'><div onClick="marcar(15,6,25)" id='a' class='circuloM'></div></th>
-<th id='157'><div onClick="marcar(15,7,25)" id='a' class='circuloM'></div></th>
-<th id='158'><div onClick="marcar(15,6,25)" id='a' class='circuloM'></div></th>
-<th id='159'><div onClick="marcar(15,9,25)" id='a' class='circuloM'></div></th>
-<th id='1510'><div onClick="marcar(15,10,25)" id='a' class='circuloM'></div></th>
-</table>
-<div width='282px' align='right'><table>
-<th id='1511'><div onClick="marcar(15,11,25)" id='a' class='circuloM'></div></th>
-<th id='1512'><div onClick="marcar(15,12,25)" id='a' class='circuloM'></div></th>
-<th id='1513'><div onClick="marcar(15,13,25)" id='a' class='circuloM'></div></th>
-<th id='1514'><div onClick="marcar(15,14,25)" id='a' class='circuloM'></div></th>
-<th id='1515'><div onClick="marcar(15,15,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='1516'><div onClick="marcar(15,16,25)" id='a' class='circuloM'></div></th>
-<th id='1517'><div onClick="marcar(15,17,25)" id='a' class='circuloM'></div></th>
-<th id='1518'><div onClick="marcar(15,18,25)" id='a' class='circuloM'></div></th>
-<th id='1519'><div onClick="marcar(15,19,25)" id='a' class='circuloM'></div></th>
-<th id='1520'><div onClick="marcar(15,20,25)" id='a' class='circuloM'></div></th>
-<th id='pont'>.</th>
-<th id='1521'><div onClick="marcar(15,21,25)" id='a' class='circuloM'></div></th>
-<th id='1522'><div onClick="marcar(15,22,25)" id='a' class='circuloM'></div></th>
-<th id='1523'><div onClick="marcar(15,23,25)" id='a' class='circuloM'></div></th>
-<th id='1524'><div onClick="marcar(15,24,25)" id='a' class='circuloM'></div></th>
-<th id='1525'><div onClick="marcar(15,25,25)" id='a' class='circuloM'></div></th>
-</table></div>
-</div>
-</div>
-<div id='VANTAGENS'>
-<mais><cm>V</cm>ANTAGENS</mais>
-<div id='vantbody1'><table><th><input type='text' id='iTvantbody1'></th>
-<th><input type='number' style='width: 45px' id='iNvantbody1'></th></table></div>
-<div id='vantbody2'><div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div></div>
-<div id='vantbody3'><div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div></div>
-<div id='vantbody4'><div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div></div>
-<div id='vantbody5'><div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div></div>
-</div>
-<div id='DESVANTAGENS'>
-<mais><cm>D</cm>ESVANTAGENS</mais>
-<div id='dvanbody1'><table><th><input type='text' id='iTdvanbody1'></th>
-<th><input type='number' style='width: 45px' id='iNdvanbody1'></th></table></div>
-<div id='dvanbody2'><div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div></div>
-<div id='dvanbody3'><div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div></div>
-<div id='dvanbody4'><div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div></div>
-</div>
-<div id='HISTORIA'>
-<mais><cm>H</cm>ISTORIA</mais>
-<textarea style='width: 295px; height: 120px' id='19'></textarea>
-</div>
-</div>
-<!-- Lado Direito --><div style='width: 315px; float: right'>
-<div id='TIPOSDEDANO'>
-<table>
-<tr><td><mais><cm>T</cm>IPOS <cm>D</cm>E <cm>D</cm>ANO</mais></td></tr>
-<tr><td>Força:</td></tr>
-<tr><td><input type='text' id='1'></td></tr>
-<tr><td>Poder de Fogo:</td></tr>
-<tr><td><input type='text' id='2'></td></tr>
-</table>
-</div>
-<div id='CAMINHOSDAMAGIA'>
-<div style='margin-left: 7px'><mais><cm>C</cm>AMINHOS <cm>D</cm>A <cm>M</cm>AGIA</mais></div>
-<table>
-<td width='80px'>Água</td>
-<th id='81'><div onClick="marcar(8,1,10)" id='a' class='circulo'></div></th>
-<th id='82'><div onClick="marcar(8,2,10)" id='a' class='circulo'></div></th>
-<th id='83'><div onClick="marcar(8,3,10)" id='a' class='circulo'></div></th>
-<th id='84'><div onClick="marcar(8,4,10)" id='a' class='circulo'></div></th>
-<th id='85'><div onClick="marcar(8,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='86'><div onClick="marcar(8,6,10)" id='a' class='circulo'></div></th>
-<th id='87'><div onClick="marcar(8,7,10)" id='a' class='circulo'></div></th>
-<th id='88'><div onClick="marcar(8,8,10)" id='a' class='circulo'></div></th>
-<th id='89'><div onClick="marcar(8,9,10)" id='a' class='circulo'></div></th>
-<th id='810'><div onClick="marcar(8,10,10)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='80px'>Ar</td>
-<th id='91'><div onClick="marcar(9,1,10)" id='a' class='circulo'></div></th>
-<th id='92'><div onClick="marcar(9,2,10)" id='a' class='circulo'></div></th>
-<th id='93'><div onClick="marcar(9,3,10)" id='a' class='circulo'></div></th>
-<th id='94'><div onClick="marcar(9,4,10)" id='a' class='circulo'></div></th>
-<th id='95'><div onClick="marcar(9,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='96'><div onClick="marcar(9,6,10)" id='a' class='circulo'></div></th>
-<th id='97'><div onClick="marcar(9,7,10)" id='a' class='circulo'></div></th>
-<th id='98'><div onClick="marcar(9,8,10)" id='a' class='circulo'></div></th>
-<th id='99'><div onClick="marcar(9,9,10)" id='a' class='circulo'></div></th>
-<th id='910'><div onClick="marcar(9,10,10)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='80px'>Fogo</td>
-<th id='101'><div onClick="marcar(10,1,10)" id='a' class='circulo'></div></th>
-<th id='102'><div onClick="marcar(10,2,10)" id='a' class='circulo'></div></th>
-<th id='103'><div onClick="marcar(10,3,10)" id='a' class='circulo'></div></th>
-<th id='104'><div onClick="marcar(10,4,10)" id='a' class='circulo'></div></th>
-<th id='105'><div onClick="marcar(10,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='106'><div onClick="marcar(10,6,10)" id='a' class='circulo'></div></th>
-<th id='107'><div onClick="marcar(10,7,10)" id='a' class='circulo'></div></th>
-<th id='108'><div onClick="marcar(10,8,10)" id='a' class='circulo'></div></th>
-<th id='109'><div onClick="marcar(10,9,10)" id='a' class='circulo'></div></th>
-<th id='1010'><div onClick="marcar(10,10,10)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='80px'>Luz</td>
-<th id='111'><div onClick="marcar(11,1,10)" id='a' class='circulo'></div></th>
-<th id='112'><div onClick="marcar(11,2,10)" id='a' class='circulo'></div></th>
-<th id='113'><div onClick="marcar(11,3,10)" id='a' class='circulo'></div></th>
-<th id='114'><div onClick="marcar(11,4,10)" id='a' class='circulo'></div></th>
-<th id='115'><div onClick="marcar(11,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='116'><div onClick="marcar(11,6,10)" id='a' class='circulo'></div></th>
-<th id='117'><div onClick="marcar(11,7,10)" id='a' class='circulo'></div></th>
-<th id='118'><div onClick="marcar(11,8,10)" id='a' class='circulo'></div></th>
-<th id='119'><div onClick="marcar(11,9,10)" id='a' class='circulo'></div></th>
-<th id='1110'><div onClick="marcar(11,10,10)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='80px'>Terra</td>
-<th id='121'><div onClick="marcar(12,1,10)" id='a' class='circulo'></div></th>
-<th id='122'><div onClick="marcar(12,2,10)" id='a' class='circulo'></div></th>
-<th id='123'><div onClick="marcar(12,3,10)" id='a' class='circulo'></div></th>
-<th id='124'><div onClick="marcar(12,4,10)" id='a' class='circulo'></div></th>
-<th id='125'><div onClick="marcar(12,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='126'><div onClick="marcar(12,6,10)" id='a' class='circulo'></div></th>
-<th id='127'><div onClick="marcar(12,7,10)" id='a' class='circulo'></div></th>
-<th id='128'><div onClick="marcar(12,8,10)" id='a' class='circulo'></div></th>
-<th id='129'><div onClick="marcar(12,9,10)" id='a' class='circulo'></div></th>
-<th id='1210'><div onClick="marcar(12,10,10)" id='a' class='circulo'></div></th>
-</table>
-<table>
-<td width='80px'>Trevas</td>
-<th id='131'><div onClick="marcar(13,1,10)" id='a' class='circulo'></div></th>
-<th id='132'><div onClick="marcar(13,2,10)" id='a' class='circulo'></div></th>
-<th id='133'><div onClick="marcar(13,3,10)" id='a' class='circulo'></div></th>
-<th id='134'><div onClick="marcar(13,4,10)" id='a' class='circulo'></div></th>
-<th id='135'><div onClick="marcar(13,5,10)" id='a' class='circulo'></div></th>
-<th>.</th>
-<th id='136'><div onClick="marcar(13,6,10)" id='a' class='circulo'></div></th>
-<th id='137'><div onClick="marcar(13,7,10)" id='a' class='circulo'></div></th>
-<th id='138'><div onClick="marcar(13,8,10)" id='a' class='circulo'></div></th>
-<th id='139'><div onClick="marcar(13,9,10)" id='a' class='circulo'></div></th>
-<th id='1310'><div onClick="marcar(13,10,10)" id='a' class='circulo'></div></th>
-</table>
-</div>
-<div id='MAGIASCONHECIDAS'>
-<mais><cm>M</cm>AGIAS <cm>C</cm>ONHECIDAS</mais>
-<textarea style='width: 295px; height: 105px' id='16'></textarea>
-</div>
-<div id='DINREIROEITENS'>
-<mais><cm>D</cm>INHEIRO E <cm>I</cm>TENS</mais>
-<textarea style='width: 295px; height: 105px' id='17'></textarea>
-<div align='right'>$  <input type='number' style='width: 100px; margin-right: 14px' id='18'></div>
-</div>
-<div id='EXPERIENCIA'>
-<div><mais><cm>E</cm>XPERIENCIA</mais></div>
-<table>
-<tr>
-<th id='201'><div onClick="marcar(20,1,40)" id='a' class='circulo'></div></th>
-<th id='202'><div onClick="marcar(20,2,40)" id='a' class='circulo'></div></th>
-<th id='203'><div onClick="marcar(20,3,40)" id='a' class='circulo'></div></th>
-<th id='204'><div onClick="marcar(20,4,40)" id='a' class='circulo'></div></th>
-<th id='205'><div onClick="marcar(20,5,40)" id='a' class='circulo'></div></th>
+    <div align='center'><img src='IMG/Logo.svg' width='600px'></div>
+    <div id='FICHA' align='center'>
+        <cm>FICHA DE PERSONAGEM</cm>
+    </div>
+    <div style='height:7px'></div>
+    <!-- Lado Esquerdo -->
+    <div style='width: 315px; float: left; padding-left: 5px'>
+        <div id='NOME'>Nome <input type='text' id='0'></div>
+        <div id='CARACTERISTICAS'>
+            <div style='margin-left: 7px'>
+                <mais>
+                    <cm>C</cm>
+                    ARATERÍSTICAS
+                </mais>
+            </div>
+            <table>
+                <td width='135px'>Força</td>
+                <th id='31'>
+                    <div onClick="marcar(3,1,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='32'>
+                    <div onClick="marcar(3,2,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='33'>
+                    <div onClick="marcar(3,3,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='34'>
+                    <div onClick="marcar(3,4,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='35'>
+                    <div onClick="marcar(3,5,7)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='36'>
+                    <div onClick="marcar(3,6,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='37'>
+                    <div onClick="marcar(3,7,7)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='135px'>Habilidade</td>
+                <th id='41'>
+                    <div onClick="marcar(4,1,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='42'>
+                    <div onClick="marcar(4,2,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='43'>
+                    <div onClick="marcar(4,3,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='44'>
+                    <div onClick="marcar(4,4,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='45'>
+                    <div onClick="marcar(4,5,7)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='46'>
+                    <div onClick="marcar(4,6,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='47'>
+                    <div onClick="marcar(4,7,7)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='135px'>Resistência</td>
+                <th id='51'>
+                    <div onClick="marcar(5,1,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='52'>
+                    <div onClick="marcar(5,2,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='53'>
+                    <div onClick="marcar(5,3,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='54'>
+                    <div onClick="marcar(5,4,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='55'>
+                    <div onClick="marcar(5,5,7)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='56'>
+                    <div onClick="marcar(5,6,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='57'>
+                    <div onClick="marcar(5,7,7)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='135px'>Armadura</td>
+                <th id='61'>
+                    <div onClick="marcar(6,1,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='62'>
+                    <div onClick="marcar(6,2,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='63'>
+                    <div onClick="marcar(6,3,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='64'>
+                    <div onClick="marcar(6,4,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='65'>
+                    <div onClick="marcar(6,5,7)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='66'>
+                    <div onClick="marcar(6,6,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='67'>
+                    <div onClick="marcar(6,7,7)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='135px'>Poder de Fogo</td>
+                <th id='71'>
+                    <div onClick="marcar(7,1,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='72'>
+                    <div onClick="marcar(7,2,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='73'>
+                    <div onClick="marcar(7,3,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='74'>
+                    <div onClick="marcar(7,4,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='75'>
+                    <div onClick="marcar(7,5,7)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='76'>
+                    <div onClick="marcar(7,6,7)" id='a' class='circulo'></div>
+                </th>
+                <th id='77'>
+                    <div onClick="marcar(7,7,7)" id='a' class='circulo'></div>
+                </th>
+            </table>
+        </div>
+        <div id='PVPM'>
+            <div id='PONTOSDEVIDA'>
+                <table>
+                    <td width='132px' style='font-size: 0.85em'>Pontos de Vida</td>
+                    <th id='141'>
+                        <div onClick="marcar(14,1,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='142'>
+                        <div onClick="marcar(14,2,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='143'>
+                        <div onClick="marcar(14,3,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='144'>
+                        <div onClick="marcar(14,4,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='145'>
+                        <div onClick="marcar(14,5,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='pont'>.</th>
+                    <th id='146'>
+                        <div onClick="marcar(14,6,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='147'>
+                        <div onClick="marcar(14,7,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='148'>
+                        <div onClick="marcar(14,6,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='149'>
+                        <div onClick="marcar(14,9,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='1410'>
+                        <div onClick="marcar(14,10,25)" id='a' class='circuloM'></div>
+                    </th>
+                </table>
+                <div width='282px' align='right'>
+                    <table>
+                        <th id='1411'>
+                            <div onClick="marcar(14,11,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1412'>
+                            <div onClick="marcar(14,12,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1413'>
+                            <div onClick="marcar(14,13,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1414'>
+                            <div onClick="marcar(14,14,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1415'>
+                            <div onClick="marcar(14,15,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='pont'>.</th>
+                        <th id='1416'>
+                            <div onClick="marcar(14,16,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1417'>
+                            <div onClick="marcar(14,17,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1418'>
+                            <div onClick="marcar(14,18,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1419'>
+                            <div onClick="marcar(14,19,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1420'>
+                            <div onClick="marcar(14,20,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='pont'>.</th>
+                        <th id='1421'>
+                            <div onClick="marcar(14,21,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1422'>
+                            <div onClick="marcar(14,22,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1423'>
+                            <div onClick="marcar(14,23,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1424'>
+                            <div onClick="marcar(14,24,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1425'>
+                            <div onClick="marcar(14,25,25)" id='a' class='circuloM'></div>
+                        </th>
+                    </table>
+                </div>
+            </div>
+            <div id='PONTOSDEMAGIA'>
+                <table>
+                    <td width='132px' style='font-size: 0.85em'>Pontos de Magia</td>
+                    <th id='151'>
+                        <div onClick="marcar(15,1,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='152'>
+                        <div onClick="marcar(15,2,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='153'>
+                        <div onClick="marcar(15,3,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='154'>
+                        <div onClick="marcar(15,4,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='155'>
+                        <div onClick="marcar(15,5,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='pont'>.</th>
+                    <th id='156'>
+                        <div onClick="marcar(15,6,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='157'>
+                        <div onClick="marcar(15,7,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='158'>
+                        <div onClick="marcar(15,6,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='159'>
+                        <div onClick="marcar(15,9,25)" id='a' class='circuloM'></div>
+                    </th>
+                    <th id='1510'>
+                        <div onClick="marcar(15,10,25)" id='a' class='circuloM'></div>
+                    </th>
+                </table>
+                <div width='282px' align='right'>
+                    <table>
+                        <th id='1511'>
+                            <div onClick="marcar(15,11,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1512'>
+                            <div onClick="marcar(15,12,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1513'>
+                            <div onClick="marcar(15,13,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1514'>
+                            <div onClick="marcar(15,14,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1515'>
+                            <div onClick="marcar(15,15,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='pont'>.</th>
+                        <th id='1516'>
+                            <div onClick="marcar(15,16,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1517'>
+                            <div onClick="marcar(15,17,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1518'>
+                            <div onClick="marcar(15,18,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1519'>
+                            <div onClick="marcar(15,19,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1520'>
+                            <div onClick="marcar(15,20,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='pont'>.</th>
+                        <th id='1521'>
+                            <div onClick="marcar(15,21,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1522'>
+                            <div onClick="marcar(15,22,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1523'>
+                            <div onClick="marcar(15,23,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1524'>
+                            <div onClick="marcar(15,24,25)" id='a' class='circuloM'></div>
+                        </th>
+                        <th id='1525'>
+                            <div onClick="marcar(15,25,25)" id='a' class='circuloM'></div>
+                        </th>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id='VANTAGENS'>
+            <mais>
+                <cm>V</cm>
+                ANTAGENS
+            </mais>
+            <div id='vantbody1'>
+                <table>
+                    <th><input type='text' id='iTvantbody1'></th>
+                    <th><input type='number' style='width: 45px' id='iNvantbody1'></th>
+                </table>
+            </div>
+            <div id='vantbody2'>
+                <div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div>
+            </div>
+            <div id='vantbody3'>
+                <div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div>
+            </div>
+            <div id='vantbody4'>
+                <div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div>
+            </div>
+            <div id='vantbody5'>
+                <div class='vazio' onClick='criarVanDes("vantbody", "encher")'></div>
+            </div>
+        </div>
+        <div id='DESVANTAGENS'>
+            <mais>
+                <cm>D</cm>
+                ESVANTAGENS
+            </mais>
+            <div id='dvanbody1'>
+                <table>
+                    <th><input type='text' id='iTdvanbody1'></th>
+                    <th><input type='number' style='width: 45px' id='iNdvanbody1'></th>
+                </table>
+            </div>
+            <div id='dvanbody2'>
+                <div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div>
+            </div>
+            <div id='dvanbody3'>
+                <div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div>
+            </div>
+            <div id='dvanbody4'>
+                <div class='vazio' onClick='criarVanDes("dvanbody", "encher")'></div>
+            </div>
+        </div>
+        <div id='HISTORIA'>
+            <mais>
+                <cm>H</cm>
+                ISTORIA
+            </mais>
+            <textarea style='width: 295px; height: 120px' id='19'></textarea>
+        </div>
+    </div>
+    <!-- Lado Direito -->
+    <div style='width: 315px; float: right'>
+        <div id='TIPOSDEDANO'>
+            <table>
+                <tr>
+                    <td>
+                        <mais>
+                            <cm>T</cm>
+                            IPOS
+                            <cm>D</cm>
+                            E
+                            <cm>D</cm>
+                            ANO
+                        </mais>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Força:</td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='1'></td>
+                </tr>
+                <tr>
+                    <td>Poder de Fogo:</td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='2'></td>
+                </tr>
+            </table>
+        </div>
+        <div id='CAMINHOSDAMAGIA'>
+            <div style='margin-left: 7px'>
+                <mais>
+                    <cm>C</cm>
+                    AMINHOS
+                    <cm>D</cm>
+                    A
+                    <cm>M</cm>
+                    AGIA
+                </mais>
+            </div>
+            <table>
+                <td width='80px'>Água</td>
+                <th id='81'>
+                    <div onClick="marcar(8,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='82'>
+                    <div onClick="marcar(8,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='83'>
+                    <div onClick="marcar(8,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='84'>
+                    <div onClick="marcar(8,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='85'>
+                    <div onClick="marcar(8,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='86'>
+                    <div onClick="marcar(8,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='87'>
+                    <div onClick="marcar(8,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='88'>
+                    <div onClick="marcar(8,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='89'>
+                    <div onClick="marcar(8,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='810'>
+                    <div onClick="marcar(8,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='80px'>Ar</td>
+                <th id='91'>
+                    <div onClick="marcar(9,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='92'>
+                    <div onClick="marcar(9,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='93'>
+                    <div onClick="marcar(9,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='94'>
+                    <div onClick="marcar(9,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='95'>
+                    <div onClick="marcar(9,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='96'>
+                    <div onClick="marcar(9,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='97'>
+                    <div onClick="marcar(9,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='98'>
+                    <div onClick="marcar(9,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='99'>
+                    <div onClick="marcar(9,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='910'>
+                    <div onClick="marcar(9,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='80px'>Fogo</td>
+                <th id='101'>
+                    <div onClick="marcar(10,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='102'>
+                    <div onClick="marcar(10,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='103'>
+                    <div onClick="marcar(10,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='104'>
+                    <div onClick="marcar(10,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='105'>
+                    <div onClick="marcar(10,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='106'>
+                    <div onClick="marcar(10,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='107'>
+                    <div onClick="marcar(10,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='108'>
+                    <div onClick="marcar(10,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='109'>
+                    <div onClick="marcar(10,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='1010'>
+                    <div onClick="marcar(10,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='80px'>Luz</td>
+                <th id='111'>
+                    <div onClick="marcar(11,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='112'>
+                    <div onClick="marcar(11,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='113'>
+                    <div onClick="marcar(11,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='114'>
+                    <div onClick="marcar(11,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='115'>
+                    <div onClick="marcar(11,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='116'>
+                    <div onClick="marcar(11,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='117'>
+                    <div onClick="marcar(11,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='118'>
+                    <div onClick="marcar(11,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='119'>
+                    <div onClick="marcar(11,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='1110'>
+                    <div onClick="marcar(11,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='80px'>Terra</td>
+                <th id='121'>
+                    <div onClick="marcar(12,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='122'>
+                    <div onClick="marcar(12,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='123'>
+                    <div onClick="marcar(12,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='124'>
+                    <div onClick="marcar(12,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='125'>
+                    <div onClick="marcar(12,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='126'>
+                    <div onClick="marcar(12,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='127'>
+                    <div onClick="marcar(12,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='128'>
+                    <div onClick="marcar(12,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='129'>
+                    <div onClick="marcar(12,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='1210'>
+                    <div onClick="marcar(12,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+            <table>
+                <td width='80px'>Trevas</td>
+                <th id='131'>
+                    <div onClick="marcar(13,1,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='132'>
+                    <div onClick="marcar(13,2,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='133'>
+                    <div onClick="marcar(13,3,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='134'>
+                    <div onClick="marcar(13,4,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='135'>
+                    <div onClick="marcar(13,5,10)" id='a' class='circulo'></div>
+                </th>
+                <th>.</th>
+                <th id='136'>
+                    <div onClick="marcar(13,6,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='137'>
+                    <div onClick="marcar(13,7,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='138'>
+                    <div onClick="marcar(13,8,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='139'>
+                    <div onClick="marcar(13,9,10)" id='a' class='circulo'></div>
+                </th>
+                <th id='1310'>
+                    <div onClick="marcar(13,10,10)" id='a' class='circulo'></div>
+                </th>
+            </table>
+        </div>
+        <div id='MAGIASCONHECIDAS'>
+            <mais>
+                <cm>M</cm>
+                AGIAS
+                <cm>C</cm>
+                ONHECIDAS
+            </mais>
+            <textarea style='width: 295px; height: 105px' id='16'></textarea>
+        </div>
+        <div id='DINREIROEITENS'>
+            <mais>
+                <cm>D</cm>
+                INHEIRO E
+                <cm>I</cm>
+                TENS
+            </mais>
+            <textarea style='width: 295px; height: 105px' id='17'></textarea>
+            <div align='right'>$ <input type='number' style='width: 100px; margin-right: 14px' id='18'></div>
+        </div>
+        <div id='EXPERIENCIA'>
+            <div>
+                <mais>
+                    <cm>E</cm>
+                    XPERIENCIA
+                </mais>
+            </div>
+            <table>
+                <tr>
+                    <th id='201'>
+                        <div onClick="marcar(20,1,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='202'>
+                        <div onClick="marcar(20,2,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='203'>
+                        <div onClick="marcar(20,3,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='204'>
+                        <div onClick="marcar(20,4,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='205'>
+                        <div onClick="marcar(20,5,40)" id='a' class='circulo'></div>
+                    </th>
 
-<th id='206'><div onClick="marcar(20,6,40)" id='a' class='circulo'></div></th>
-<th id='207'><div onClick="marcar(20,7,40)" id='a' class='circulo'></div></th>
-<th id='208'><div onClick="marcar(20,8,40)" id='a' class='circulo'></div></th>
-<th id='209'><div onClick="marcar(20,9,40)" id='a' class='circulo'></div></th>
-<th id='2010'><div onClick="marcar(20,10,40)" id='a' class='circulo'></div></th>
-<th style='color: rgba(0,0,0,0)'>.</th>
-</tr>
-<tr>
-<th id='2011'><div onClick="marcar(20,11,40)" id='a' class='circulo'></div></th>
-<th id='2012'><div onClick="marcar(20,12,40)" id='a' class='circulo'></div></th>
-<th id='2013'><div onClick="marcar(20,13,40)" id='a' class='circulo'></div></th>
-<th id='2014'><div onClick="marcar(20,14,40)" id='a' class='circulo'></div></th>
-<th id='2015'><div onClick="marcar(20,15,40)" id='a' class='circulo'></div></th>
+                    <th id='206'>
+                        <div onClick="marcar(20,6,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='207'>
+                        <div onClick="marcar(20,7,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='208'>
+                        <div onClick="marcar(20,8,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='209'>
+                        <div onClick="marcar(20,9,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2010'>
+                        <div onClick="marcar(20,10,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th style='color: rgba(0,0,0,0)'>.</th>
+                </tr>
+                <tr>
+                    <th id='2011'>
+                        <div onClick="marcar(20,11,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2012'>
+                        <div onClick="marcar(20,12,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2013'>
+                        <div onClick="marcar(20,13,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2014'>
+                        <div onClick="marcar(20,14,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2015'>
+                        <div onClick="marcar(20,15,40)" id='a' class='circulo'></div>
+                    </th>
 
-<th id='2016'><div onClick="marcar(20,16,40)" id='a' class='circulo'></div></th>
-<th id='2017'><div onClick="marcar(20,17,40)" id='a' class='circulo'></div></th>
-<th id='2018'><div onClick="marcar(20,18,40)" id='a' class='circulo'></div></th>
-<th id='2019'><div onClick="marcar(20,19,40)" id='a' class='circulo'></div></th>
-<th id='2020'><div onClick="marcar(20,20,40)" id='a' class='circulo'></div></th>
-<th style='color: rgba(0,0,0,0)'>.</th>
-</tr>
-<tr>
-<th id='2021'><div onClick="marcar(20,21,40)" id='a' class='circulo'></div></th>
-<th id='2022'><div onClick="marcar(20,22,40)" id='a' class='circulo'></div></th>
-<th id='2023'><div onClick="marcar(20,23,40)" id='a' class='circulo'></div></th>
-<th id='2024'><div onClick="marcar(20,24,40)" id='a' class='circulo'></div></th>
-<th id='2025'><div onClick="marcar(20,25,40)" id='a' class='circulo'></div></th>
+                    <th id='2016'>
+                        <div onClick="marcar(20,16,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2017'>
+                        <div onClick="marcar(20,17,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2018'>
+                        <div onClick="marcar(20,18,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2019'>
+                        <div onClick="marcar(20,19,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2020'>
+                        <div onClick="marcar(20,20,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th style='color: rgba(0,0,0,0)'>.</th>
+                </tr>
+                <tr>
+                    <th id='2021'>
+                        <div onClick="marcar(20,21,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2022'>
+                        <div onClick="marcar(20,22,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2023'>
+                        <div onClick="marcar(20,23,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2024'>
+                        <div onClick="marcar(20,24,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2025'>
+                        <div onClick="marcar(20,25,40)" id='a' class='circulo'></div>
+                    </th>
 
-<th id='2026'><div onClick="marcar(20,26,40)" id='a' class='circulo'></div></th>
-<th id='2027'><div onClick="marcar(20,27,40)" id='a' class='circulo'></div></th>
-<th id='2028'><div onClick="marcar(20,28,40)" id='a' class='circulo'></div></th>
-<th id='2029'><div onClick="marcar(20,29,40)" id='a' class='circulo'></div></th>
-<th id='2030'><div onClick="marcar(20,30,40)" id='a' class='circulo'></div></th>
-<th style='color: rgba(0,0,0,0)'>.</th>
-</tr>
-<tr>
-<th id='2031'><div onClick="marcar(20,31,40)" id='a' class='circulo'></div></th>
-<th id='2032'><div onClick="marcar(20,32,40)" id='a' class='circulo'></div></th>
-<th id='2033'><div onClick="marcar(20,33,40)" id='a' class='circulo'></div></th>
-<th id='2034'><div onClick="marcar(20,34,40)" id='a' class='circulo'></div></th>
-<th id='2035'><div onClick="marcar(20,35,40)" id='a' class='circulo'></div></th>
+                    <th id='2026'>
+                        <div onClick="marcar(20,26,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2027'>
+                        <div onClick="marcar(20,27,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2028'>
+                        <div onClick="marcar(20,28,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2029'>
+                        <div onClick="marcar(20,29,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2030'>
+                        <div onClick="marcar(20,30,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th style='color: rgba(0,0,0,0)'>.</th>
+                </tr>
+                <tr>
+                    <th id='2031'>
+                        <div onClick="marcar(20,31,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2032'>
+                        <div onClick="marcar(20,32,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2033'>
+                        <div onClick="marcar(20,33,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2034'>
+                        <div onClick="marcar(20,34,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2035'>
+                        <div onClick="marcar(20,35,40)" id='a' class='circulo'></div>
+                    </th>
 
-<th id='2036'><div onClick="marcar(20,36,40)" id='a' class='circulo'></div></th>
-<th id='2037'><div onClick="marcar(20,37,40)" id='a' class='circulo'></div></th>
-<th id='2038'><div onClick="marcar(20,38,40)" id='a' class='circulo'></div></th>
-<th id='2039'><div onClick="marcar(20,39,40)" id='a' class='circulo'></div></th>
-<th id='2040'><div onClick="marcar(20,40,40)" id='a' class='circulo'></div></th>
-<th style='color: rgba(0,0,0,0)'>.</th>
-</tr></table>
-</div>
-
-
-</div>
+                    <th id='2036'>
+                        <div onClick="marcar(20,36,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2037'>
+                        <div onClick="marcar(20,37,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2038'>
+                        <div onClick="marcar(20,38,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2039'>
+                        <div onClick="marcar(20,39,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th id='2040'>
+                        <div onClick="marcar(20,40,40)" id='a' class='circulo'></div>
+                    </th>
+                    <th style='color: rgba(0,0,0,0)'>.</th>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
 </body>
 </html>
